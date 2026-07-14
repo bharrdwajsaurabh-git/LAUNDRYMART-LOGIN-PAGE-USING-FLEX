@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.navbar{
+    color: white;
+    height: 12vh;
+    padding: 0px 5vw;
+    text-align: center;
+}
+.navbar .logo, .navbar .nav-links, .navbar .nav-links li, .navbar .User-name{
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar .logo{
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498db;
+    margin-left: 40px;
+    line-height: 12vh;
+}
+.navbar .nav-links{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 12vh;
+}
+.navbar .nav-links li{
+    margin: 0 15px;
+}
+.navbar .nav-links a{
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar .nav-links a:hover{
+    color: #3498db;
+}
+.navbar .User-name{
+    float: right;
+    font-size: 20px;
+    background-color: #d2e4f6;
+    color: blue;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 3.5vh;
+}
+.navbar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/*  Hero SEction Styling */
+.hero{
+    height: 88vh;
+    width: 100vw;
+    padding: 0 5vw;
+    font-size: 0;
+}
+.hero:before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.left-div, .right-div{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.left-div{
+    width: 50%;
+    padding-right: 15%;
+}
+.left-div h1{
+    font-size: 3.2vw;
+    color: #1a1a1a;
+    margin-bottom: 2vh;
+}
+.left-div h1 .highlight{
+    color: #4fa3db;
+}
+.left-div p{
+    font-size: 1.1vw;
+    color: #666;
+    margin-bottom: 4vh;
+    max-width: 90%;
+
+}
+.left-div button{
+    background-color: #4fa3db;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1vw;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.left-div button:hover{
+    background-color: #3b8cc1;
+}
+.right-div{
+    width: 50%;
+    text-align: center;
+}
+.right-div img{
+    width: 70%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+  
